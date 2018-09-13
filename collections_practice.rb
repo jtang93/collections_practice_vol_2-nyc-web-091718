@@ -7,3 +7,7 @@ def begins_with_r(array)
     FALSE
   end
 end
+
+def contain_a(array)
+  newarr = array.select {|word| word.include?("a")}
+end
