@@ -4,10 +4,14 @@ def begins_with_r(array)
   if newarr == array
     true
   else
-    FALSE
+    false
   end
 end
 
 def contain_a(array)
   newarr = array.select {|word| word.include?("a")}
+end
+
+def first_wa(array)
+  array[array.find {|word| word.start_with?("wa")}]
 end
