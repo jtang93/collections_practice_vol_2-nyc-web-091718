@@ -13,5 +13,6 @@ def contain_a(array)
 end
 
 def first_wa(array)
-  array[array.find {|word| word.start_with?("wa")}]
+  index = array.find {|word| word.start_with?("wa")}
+  array[index-1]
 end
